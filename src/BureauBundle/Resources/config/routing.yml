@@ -1,0 +1,15 @@
+bureau_homepage:
+    path: /
+    defaults: { _controller: BureauBundle:GestionArticle:home }
+bureau_ajouterArticle:
+    path: /ajArticle
+    defaults: { _controller: BureauBundle:GestionArticle:Editer }
+bureau_modifArticle:
+    path: /modif/{ id}
+    defaults: { _controller: BureauBundle:GestionArticle:modifi }
+bureau_supprimeArticle:
+    path: /supprimmeArticle/{id}
+    defaults: { _controller: BureauBundle:GestionArticle:Supprime }
+bureau_voirtout:
+    path: /touslesArticle
+    defaults: { _controller: BureauBundle:GestionArticle:avoirtous}
